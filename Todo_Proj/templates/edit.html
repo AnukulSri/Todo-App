@@ -1,9 +1,31 @@
-<form method="POST">
-	<!-- csrf=Cross Site Request forgery -->
-	{% csrf_token %}
-	<!-- to layout all the elements of the form -->
-	{{form.as_p}}
-	<!-- submit button -->
-	<input type="submit">
+{% extends 'base.html' %}
+{%block body%}
+
+<style>
+form{
+	margin-top: 50px;
 	
-</form>
+}
+.container{
+	margin-top: 10em;
+	height: 18em;
+	width: 18em;
+	border-radius: 8px;
+	border-width: 2px;
+	background-color: antiquewhite;
+}
+</style>
+<center>
+	<div class="container">
+	<form method="POST">
+		<!-- csrf=Cross Site Request forgery -->
+		{% csrf_token %}
+		<!-- to layout all the elements of the form -->
+		{{form.as_p}}
+		<!-- submit button -->
+		<input type="submit">
+
+	</form>
+</div>
+</center>
+{% endblock %}
