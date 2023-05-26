@@ -17,3 +17,8 @@
 	/* change the text colour */
 	color:white;
 }
+
+body{
+	background: linear-gradient( 90deg, rgb(245, 245, 114) 26.8%, rgb(239, 182, 84) 64% );
+
+}
